@@ -9,11 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            Text("Knock, knock !")
+                .padding()
+                .background(Color.orange, in: RoundedRectangle(cornerRadius: 25))
+                .blur(radius: 5)
+            Text("Who's there ?")
+                .padding()
+                .background(Color.green, in: RoundedRectangle(cornerRadius: 25))
+                .font(.largeTitle)
+            Text("It's me Mario")
+                .padding()
+                .background(Color.red, in: RoundedRectangle(cornerRadius: 25))
+                .shadow(radius: 10)
         }
         .padding()
     }
